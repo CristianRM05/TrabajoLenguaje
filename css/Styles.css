@@ -1,0 +1,31 @@
+body {
+    background-color: beige;
+}
+
+#container {
+    grid-template-areas: 1 fr
+        "header"
+        "body"
+        "aside"
+        "footer";
+
+}
+
+#header {
+    grid-area: header;
+}
+
+
+#body {
+    grid-area: body;
+}
+
+
+#aside {
+    grid-area: aside;
+}
+
+
+#footer {
+    grid-area: footer;
+}
