@@ -3,29 +3,72 @@ body {
 }
 
 #container {
-    grid-template-areas: 1 fr
+    display: grid;
+    grid-template-areas: 
         "header"
-        "body"
+        "title"
+        "section"
+        "article"
         "aside"
-        "footer";
-
+        "footer"
+        ;
 }
 
 #header {
     grid-area: header;
 }
-
-
-#body {
-    grid-area: body;
+#header h1{
+    text-align: center;
+    background-color: white;
+    padding: 2%;
+    
 }
 
+#title {
+    grid-area: title;
+}
+
+#section {
+    grid-area: section;
+}
+
+#article {
+    grid-area: article;
+}
 
 #aside {
     grid-area: aside;
 }
 
-
 #footer {
     grid-area: footer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FORMATO PARA TABLET */
+@media only screen and (min-width: 768px) {}
+
+
+
+
+
+
+
+
+
+/* FORMATO PARA PANTALLA DE ESCRITORIO */
+@media only screen and (min-width: 1024px) {}
