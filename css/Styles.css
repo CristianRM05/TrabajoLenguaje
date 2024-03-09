@@ -1,6 +1,5 @@
 body {
-    background-color: #4577B1;
-
+    background-image: url(../img/fondo3.jpg);
 }
 
 #container {
@@ -16,57 +15,47 @@ body {
     ;
 }
 
-#logo {
-    position: absolute;
-    /* Posición absoluta para que la imagen se posicione en relación al encabezado */
-    top: 10px;
-    /* Ajustar la posición vertical según tu diseño */
-    left: 10px;
-    /* Ajustar la posición horizontal según tu diseño */
-    max-width: 28vw;
-    /* La imagen ocupará el ancho completo del encabezado */
-    height: auto;
-    /* La altura se ajustará automáticamente manteniendo la proporción */
-}
-
-#header {
+header {
+    margin-top: 1%;
+    display: grid;
     grid-area: header;
-    position: relative;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    text-align: center;
+    background-color: #f48e45;
+    border-radius: 20px;
+    padding: 1%;
+    border: 5px solid black;
 }
 
-
-#header h1 {
-    text-align: center;
-    background-color: wheat;
-    padding: 2%;
-    border-radius: 10px;
-    animation: TRAER 0.4s linear both
+#logo{
+    max-height: 20vw;float: inherit;
 }
 
 #navlist {
     grid-area: nav;
+    margin-top: 2%;
 }
 
 #navlist ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
 }
 
 #navlist a {
     text-decoration: none;
     color: black;
+    background-color: aliceblue;
     font-weight: bold;
     border: 2px solid black;
-    padding: 1.2vw;
+    padding: 2vw;
     border-radius: 10px;
 }
 
 #navlist a:hover {
     transition: 0.5s ease;
     background-color: rgb(175, 250, 250);
-    animation: shadow-drop-center 0.4s linear both
+    animation: shadow-drop-center 0.4s linear both;
 }
 
 #introduccion {
@@ -150,13 +139,6 @@ body {
 
 
 
-
-
-
-
-body.body2 {
-    background-image: url(/TrabajoLenguaje/imagenes/fondo3.jpg);
-}
 
 #contenedor2 {
     display: grid;
@@ -263,6 +245,19 @@ body.body2 {
     border-radius: 10px;
 }
 
+/* FORMATO PARA TABLET */
+@media only screen and (min-width: 768px){
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "sec1"
+            "sec2"
+            "footer";
+    }
+}
 
 
 
