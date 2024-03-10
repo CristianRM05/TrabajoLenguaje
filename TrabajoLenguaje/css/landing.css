@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+#contenedor {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(212, 253, 216);
+}
+
+#presentacion {
+    width: 100vw;
+
+    margin-top: 1vh;
+}
+
+#presentacion img {
+    max-width: 100vw;
+    height: 40vh;
+
+}
+
+#navbar a {
+    text-decoration: none;
+    margin: 3vw;
+    color: rgb(43, 24, 24);
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: 0.5s ease-in-out;
+}
+
+#navbar {
+    display: flex;
+    margin-top: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+
+#texto {
+    max-width: 95vw;
+    margin-top: 1vh;
+    padding: 1vw;
+    text-align: center;
+
+}
+
+#texto p {
+    border: 2px solid black;
+    padding: 4vh;
+    border-radius: 35px 0 35px 0;
+    background-color: hsl(129, 17%, 51%);
+    color: rgb(43, 24, 24);
+    font-size: 1.2em;
+}
+
+#personaje img {
+    max-width: 99vw;
+    
+}
+
+#iconos {
+    display: flex;
+    max-width: 99vw;
+    margin-top: 3vh;
+}
+
+#iconos img {
+    max-width: 54vw;
+}
+
+#descargar img {
+    margin-top: 5vh;
+}
+
