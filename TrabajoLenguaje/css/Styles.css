@@ -1,5 +1,14 @@
+
+@font-face {
+    font-family: 'OnePiece-zAqL.ttf';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OnePiece-zAqL.ttf'), url('OnePiece-zAqL.woff') format('woff');
+}
+
+
 body {
-    background-image: url(../img/fondo3.jpg);
+    background-color: aliceblue;
 }
 
 #container {
@@ -16,16 +25,19 @@ body {
 }
 
 header {
+    font-family: 'OnePiece-zAqL.ttf', sans-serif; /* Utiliza la fuente definida en @font-face */
     margin-top: 1%;
     display: grid;
     grid-area: header;
     grid-template-columns: auto 1fr;
     align-items: center;
     text-align: center;
-    background-color: #f48e45;
+    background-color: #59e030;
     border-radius: 20px;
     padding: 1%;
     border: 5px solid black;
+    text-transform: uppercase;
+
 }
 
 #logo{
@@ -59,41 +71,38 @@ header {
 }
 
 #introduccion {
-    border: 2px solid wheat;
+    border: 2px solid rgb(0, 0, 0);
     padding: 2vw;
     margin-top: 3vh;
     border-radius: 20px;
 }
 
 #introduccion p {
-    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: wheat;
+    color: rgb(0, 0, 0);
     font-size: 1.4em;
-
 }
 
 #controles {
     grid-area: section;
-    border: 1px solid wheat;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     margin-top: 2VH;
 
     font-style: normal;
-    color: wheat;
+    color: rgb(8, 8, 8);
     font-size: 1.1em;
 }
 
 #controles li {
     margin-top: 2vh;
     animation: aparecer 2s ease;
-
 }
 
 #controles h1 {
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 /* PARA QUE APAREZCAN SOMBREAS AL ESTAR ENCIMA DE LINKS*/
@@ -258,14 +267,6 @@ header {
             "footer";
     }
 }
-
-
-
-
-
-
-
-
 
 /* FORMATO PARA PANTALLA DE ESCRITORIO */
 @media only screen and (min-width: 1024px) {

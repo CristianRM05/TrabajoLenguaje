@@ -1,34 +1,40 @@
+@font-face {
+    font-family: 'OnePiece-zAqL.ttf';
+    font-style: normal;
+    font-weight: normal;
+    src: local('typography/OnePiece-zAqL.woff'), url('OnePiece-zAqL.woff') format('woff');
+}
+
 body {
+    font-family: 'OnePiece-zAqL', sans-serif; /* Utiliza la fuente definida en @font-face */
+    font-size: 1em;
     margin: 0;
     padding: 0;
-
 }
 
 #contenedor {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background-color: rgb(212, 253, 216);
+    background-color: rgb(255, 255, 255);
 }
 
 #presentacion {
     width: 100vw;
-
     margin-top: 1vh;
 }
 
 #presentacion img {
     max-width: 100vw;
     height: 40vh;
-
 }
 
 #navbar a {
     text-decoration: none;
-    margin: 3vw;
-    color: rgb(43, 24, 24);
+    margin: 2vw;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.3em;
     transition: 0.5s ease-in-out;
 }
 
@@ -49,7 +55,6 @@ body {
     margin-top: 1vh;
     padding: 1vw;
     text-align: center;
-
 }
 
 #texto p {
@@ -61,15 +66,12 @@ body {
     font-size: 1.2em;
 }
 
-#personaje img {
-    max-width: 99vw;
-    
+#personaje {
+    text-align: center;
 }
 
 #iconos {
     display: flex;
-    max-width: 99vw;
-    margin-top: 3vh;
 }
 
 #iconos img {
@@ -79,4 +81,3 @@ body {
 #descargar img {
     margin-top: 5vh;
 }
-
