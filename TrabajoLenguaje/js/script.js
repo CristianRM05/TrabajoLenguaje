@@ -1,4 +1,4 @@
-/*let edadUsuario = prompt("Por favor, ingresa tu edad:");
+let edadUsuario = prompt("Por favor, ingresa tu edad:");
 
 // Verificar si el usuario puede entrar a la web
 if (edadUsuario >= 18) {
@@ -15,4 +15,3 @@ if (edadUsuario >= 18) {
         window.location.href = "https://www.lego.com/";
     }
 }
-*/

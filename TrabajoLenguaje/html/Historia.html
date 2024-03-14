@@ -4,45 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Styles.css">
+    <link rel="stylesheet" href="../css/Styles5.css">
     <link rel="icon" href="../img/favicon.png" type="image/x-icon">
-    <title>HISTORIA</title>
+    <script src="../js/sonido.js"> </script>
+    <title>Historia - La búsqueda del Sake de Zoro</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>Historia</h1>
+    <header id="header">
+        <a href="../index.html"><img id="logo" src="../img/logo.png" alt="Logotipo"></a>
+        <h1>Historia del videojuego</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="../index.html">Guía</a></li>
-            <li><a href="">Historia</a></li>
+            <li><a href="story.html">Historia</a></li>
             <li><a href="">Nosotros</a></li>
             <li><a href="">Contacto</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h2>Nuestro Origen</h2>
-        <p>Nuestra historia comenzó en el año [AÑO DE FUNDACIÓN], cuando un grupo de apasionados por [EL CAMPO DE TRABAJO O INTERÉS DEL PROYECTO] se unieron con el objetivo de [OBJETIVO O MISIÓN DEL PROYECTO]. Nos inspiramos en [INSPIRACIÓN O MOTIVACIÓN INICIAL] para comenzar este viaje emocionante.</p>
+
+    <section id="sobreVideojuego">
+        <h2>Sobre el videojuego</h2>
+        <p>
+            ¡Bienvenido a "La Búsqueda del Sake de Zoro"! Sumérgete en un emocionante viaje a través de paisajes llenos
+            de misterio y desafíos en nuestra cautivadora plataforma de juego. En esta aventura, te embarcarás en la
+            búsqueda del legendario sake de Zoro, un tesoro perdido que aguarda a ser descubierto por aquellos lo
+            suficientemente valientes para enfrentar los obstáculos que se interponen en su camino. Desde peligrosos
+            laberintos hasta emocionantes acertijos, cada paso te acerca más al tesoro final. ¿Estás listo para aceptar
+            el desafío y convertirte en el héroe de esta fascinante odisea? ¡Únete a la búsqueda y deja que la emoción
+            te envuelva en "La Búsqueda del Zaque de Zoro"!
+        </p>
+
     </section>
 
-    <section>
-        <h2>Nuestro Crecimiento</h2>
-        <p>A lo largo de los años, hemos experimentado un crecimiento constante y hemos enfrentado diversos desafíos y oportunidades. Desde nuestros humildes comienzos, hemos alcanzado hitos significativos como [LOGROS IMPORTANTES, HITOS O HITOS DEL PROYECTO]. Nuestro equipo ha crecido y se ha fortalecido, y cada miembro ha contribuido al éxito de nuestro proyecto.</p>
+    <section id="mapas">
+        <h2>Mapas del videojuego</h2>
+        <div class="mapas">
+            <div class="imagen"><img src="../img/mapa 1.png" alt="Mapa 1"></div>
+            <div class="imagen"><img src="../img/MAPA 2.png" alt="Mapa 2"></div>
+            <div class="imagen"><img src="../img/MAPA 3.png" alt="Mapa 3"></div>
+        </div>
     </section>
 
-    <section>
-        <h2>Nuestros Logros</h2>
-        <p>Estamos orgullosos de haber logrado [LOGROS NOTABLES O RECONOCIMIENTOS]. Algunos de nuestros hitos más destacados incluyen [EJEMPLOS DE LOGROS O RECONOCIMIENTOS]. Estos logros son el resultado del arduo trabajo, la dedicación y el compromiso de nuestro equipo.</p>
+    <section id="bandaSonora">
+        <h2>Sonidos del Videojuego</h2>
+        <button onclick="playAudio('../audio/attack1.wav')">Ataque 1</button>
+        <button onclick="playAudio('../audio/attack2.wav')">Ataque 2</button>
+        <button onclick="playAudio('../audio/attack3.wav')">Ataque 3</button>
+        <button onclick="playAudio('../audio/level2.wav')">Mapa 2</button>
+        <button onclick="playAudio('../audio/menu.wav')">Menu</button>
     </section>
 
-    <section>
-        <h2>Nuestro Futuro</h2>
-        <p>Mirando hacia adelante, estamos emocionados por lo que depara el futuro. Continuaremos persiguiendo nuestros objetivos y aspiraciones, mientras nos adaptamos a los cambios del entorno. Nuestro compromiso sigue siendo el mismo: [MISIÓN O PROPÓSITO DEL PROYECTO]. Con el apoyo de nuestra comunidad y el esfuerzo de nuestro equipo, estamos listos para enfrentar cualquier desafío que se nos presente.</p>
-    </section>
 
     <footer>
         <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">La
@@ -55,6 +71,7 @@
                     style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
                     src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></p>
     </footer>
+
 
 </body>
 
